@@ -1,0 +1,146 @@
+/* Reset */
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    background-color: #0f964e;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%233e7857' fill-opacity='1' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* Capa */
+.capa{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url('img/capa.jpeg') no-repeat 50% 50%;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+.capa .interior{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.conteudo1{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.button{
+    border: 1px solid #f4f3ef;
+    color: #f4f3ef;
+    border-radius: 9px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 120%;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.button:hover{
+    font-weight: 900;
+    color: #f4f3ef;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button:active{
+    font-weight: 900;
+    color: #f4f3ef;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button:visited{
+    font-weight: 900;
+    color: #f4f3ef;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Tipografia */
+@import url('https://fonts.googleapi.com/css?family=Poppins');
+
+.conteudo1 h1{
+    font-family: 'Poppins', sans-serif;
+    color: #f4f3ef;    
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.conteudo1 p{
+    font-style: italic;
+    color: #f4f3ef;
+}
+
+#cor1{
+    color: #f4f3ef;
+}
+
+/* Table */
+TH, TD { 
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+    max-width: none;
+    height: 100%;  
+}
+
+TH, TD, tbody{
+    width: 100px;
+    height: 50px;
+}
+
+#myDiv{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: table;
+}
+
+#myTable{
+    padding: 0px;  
+    margin: auto;
+    width: 50%;
+    max-width: none;
+    height: 100%;
+}
+
+
+.thead{
+    text-align: center;
+    align-content: center;
+}
+
+.background{
+    background-color: #0f964e;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%233e7857' fill-opacity='1' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+
+h5{
+    text-decoration: none;
+    color: #f4f3ef;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.btn-group-vertical{
+    float: left;
+    padding: 10px;
+}
+
+
+

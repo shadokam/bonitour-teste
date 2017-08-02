@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Agenda Reutilizável </title>
+	<meta name="description" content= "Essa simples agenda foi criada para o teste de Front-End da empresa Bonitour">
+	<meta name="keywords" content="agenda, reutilizavel, organizar, dias, horas"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="jquery/external/jquery/jquery.js"></script>
+	<script src="jquery/jquery-ui.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Fonte -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<!-- JS -->
+	<script src="agenda.js"></script>
+
+</head>
+
+<body>
+	<section class="capa"> <!-- Início capa -->
+		<div class="interior"> <!-- Início inteior -->
+			<div class="conteudo1"> <!-- Início conteúdo1 -->
+				<h1> <b>Agenda</b> Reutilizável </h1>
+				
+				<p>Digite a quantidade de horas e dias que deseja ter na agenda </p>
+
+				<b id="cor1">Horas: </b>
+				<input type="number" id="horas" placeholder="Digite as horas" />
+    
+				<b id="cor1">Dias: </b>
+				<input type="number" id="dias" placeholder="Digite os dias" />
+
+				<br/> <br/> <br/>
+				<a class="button" onclick="iniciaTabela()" href="#myDiv"> Iniciar! </a>
+			</div> <!-- Fim conteúdo1 -->
+		</div> <!-- Fim interior -->
+	</section> <!-- Fim capa -->
+
+	<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+	<div id="myDiv"> <!-- Início div principal -->
+		<div class="btn-group-vertical"> <!-- Início botões -->
+			<button type="button" class="btn btn-success" onclick="marcarTudo()"> Marca </button>
+			<button type="button" class="btn btn-success" onclick="desmarcarTudo()"> Desmarca </button>
+			<button type="button" class="btn btn-success" onclick="preencheTd()"> Preenche </button>
+			<button type="button" class="btn btn-success" onclick="desabilitaTd()"> Desabilita </button>
+			<button type="button" class="btn btn-success" onclick="limpaTd()"> Limpa </button>
+		</div> <!-- Fim botões -->
+		
+		<table id="myTable" class="table table-bordered background">
+			<thead id="myThead">
+			</thead>
+
+			<tbody id="myTbody">
+			</tbody>
+		</table>
+	</div> <!-- Fim div principal -->
+
+</body>
+
+</html>
